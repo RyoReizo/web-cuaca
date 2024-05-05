@@ -10,7 +10,7 @@ tombol.addEventListener('click', () => {
         const data = response.data
         hasilCuaca.innerHTML = `
         <div>${data.name}</div>
-        <div>Suhu Udara: ${(data.main.temp - 273).toFixed(2)}</div>
+        <div>Suhu Udara: ${(data.main.temp - 273).toFixed(2)}°C</div>
         <div>Cuaca: ${data.weather[0].description}</div>`
     })
 })
